@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #68cbe4;
+    /*  font-family: "Nunito", sans-serif;*/
+    font-family: "Merienda", cursive;
+    font-weight: 400;
+}
+
+:root {
+    --primaryColor: #BE9C79;
+    --textDarkColor: #000000;
+    --textLightColor: #FEFEFE;
+    --lightColor: #FFFFFF;
+    --paragraphFontFamily: "Nunito", sans-serif;
+    --navLinkFont: 2rem;
+    --paragraphFont: 1.6rem;
+
+}
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--lightColor);
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navBar {
+    padding: 2.67rem 0;
+}
+
+.navContainer{
+    box-shadow: 0 .5rem 1rem rgba(58, 57, 57, 0.1);
+    position: sticky;
+    top:0;
+    left:0;
+    right:0;
+    background-color:white ; 
+}
+
+.logo img {
+    height: 5.1rem;
+    margin-right: 47rem;
+}
+
+.navLinks {
+    width: 80%;
+    margin-left: 3rem;
+}
+
+.navLinks li {
+    list-style-type: none;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    font-size: var(--navLinkFont);
+    color: #6a6a6b;
+    font-weight: 2;
+    color: var(--textDarkColor);
+    font-family: var(--paragraphFontFamily)
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.d-flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.d-flex-col-start {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+}
+
+.heroBody {
+    width: 50%;
+}
+
+.heroSection {
+    background-color: var(--lightColor);
+    background: url(./assets/images/home-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 26rem 0;
+}
+
+.heroJumbotron {
+    /* background-color: rgb(233, 236, 236);*/
+    margin-top: 2rem;
+    margin-right: 4rem;
+    padding: 7rem 2rem;
+}
+
+.heroJumbotron h1 {
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.heroJumbotron p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-family: var(--paragraphFontFamily);
+    margin-bottom: 2.5rem;
+    margin-left: 3.4px;
+}
+
+.heroJumbotron button {
+    background-color: var(--primaryColor);
+    padding: 1.8rem 5.2rem;
+    border: none;
+    color: var(--lightColor);
+    font-size: 2.2rem;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--lightColor);
+}
+
+.menuBody {
+    width: 50%;
+}
+
+.menuImage img {
+    height: 60rem;
+    margin-top: 3rem;
+}
+
+.menuJumbotron {
+    /*  background-color: rgb(233, 236, 236);*/
+       padding: 2rem;
+}
+
+.menuJumbotron h3 {
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+.menuJumbotron p {
+    font-size: 1.8rem;
+    font-family: var(--paragraphFontFamily);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3.4px;
+    line-height: 1.5;
+}
+
+.menuJumbotron button {
+    background-color: var(--primaryColor);
+    padding: 1.3rem 4.2rem;
+    border: none;
+    color: var(--lightColor);
+    font-size: 2rem;
+
+}
+
+.csHeadingImage img {
+    height: 4.5rem;
+}
+
+.headingTitle {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.headingTitle h2 {
+    font-size: 4.3rem;
+    font-weight: 800;
+}
+
+.cardHeadingImage img {
+    height: 11rem;
+}
+
+.cardHeading {
+    padding: 2rem 2rem;
+}
+
+.cardBody h3 {
+    font-size: 2.1rem;
+    font-weight: 2;
+    font-family: var(--paragraphFontFamily);
+    margin-bottom: 1.5rem;
+}
+
+.cardBody p {
+    font-size: 1.7rem;
+    font-family: var(--paragraphFontFamily);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3.4px;
+    line-height: 1.5;
+}
+
+.cardBody h4 {
+    font-size: 2.1rem;
+    font-weight: 2;
+    font-family: var(--paragraphFontFamily);
+    margin-bottom: 1.5rem;
+}
+
+.popularBody .cardHeadingImage img {
+    height: 35rem;
+}
+
+.popularBody .cardHeading {
+    padding: 1.3rem 2.6rem;
+}
+
+.gallery .headingTitle {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.cardImg img {
+    width: 100%;
+    aspect-ratio: 7/5;
+    padding: 1.7rem;
+}
+
+.teamBody .cardImage img {
+    width: 100%;
+    aspect-ratio: 3/3;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    margin-top: 2rem;
+}
+
+.teamBody .cardBody h4 {
+    margin-top: 0rem;
+    font-size: 2rem;
+    font-family: var(--paragraphFontFamily);
+    font-weight: 10;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--lightColor);
+}
+
+.d-flex-form {
+    width: 100%;
+    padding: 1.5rem 2.5rem 0.1rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .headingTitle {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.contactForm {
+        border: 0.1rem solid #000000;
+    margin-top: 12rem;
+
+}
+
+
+.formGroup {
+    padding-bottom: 1.8rem;
+}
+
+.formGroup input {
+    width: 100%;
+    border: 0.1rem solid #000000;
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.contactForm button {
+    padding: 1.3rem 4rem;
+    margin-top: 1rem;
+        font-family: var(--paragraphFontFamily);
+    font-size: 2rem;
+    background-color: var(--primaryColor);
+    color: var(--textLightColor);
+    border: none;
+    margin-bottom: 3rem;
+}
+
+.contactForm h3 {
+    font-family: var(--paragraphFontFamily);
+    font-size: 4rem;
+    margin-top: 1.3rem;
+       font-weight: 400;
+    text-align: center;
+}
+
+.d-flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contactIconHeading {
+    margin-top: 17rem;
+}
+
+.favImage i {
+    font-size: 4rem;
+    color: #FFFFFF;
+    padding: 1.5rem;
+    border: 1px solid var(--primaryColor);
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+}
+
+.favImage .fa-location-dot {
+    padding: 1.6rem 2rem;
+}
+
+.footerBody {
+    margin: 2rem 0 5rem 0;
+}
+
+.footerBody h4 {
+    margin: 14px 0;
+    font-family: var(--paragraphFontFamily);
+    font-size: 2.2rem;
+    font-weight: 100;
+    padding-bottom: 1rem;
+}
+
+.footerBody p {
+    margin: 10px 0;
+    font-family: var(--paragraphFontFamily);
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.copyRightContainer h6 {
+    font-family: var(--paragraphFontFamily);
+    font-size: 3rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+hr {
+    border: 1px solid black;
+}
